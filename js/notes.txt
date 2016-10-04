@@ -1,0 +1,48 @@
+**TO DO
+need to add character icon in main window
+format dialogue better
+add romance image
+and make progress bar (function that matches div width with mood score)
+
+//Structure
+game controller-
+	has initial choose character 
+	launches character stories
+	repeat prompt
+
+//when called storyObject = new Story("hrk","Kylo Ren");
+character loop  Class:
+	makes story object (three instances):
+		storyline value
+		character object
+			name
+			mood
+			changeMood function
+		list of event objects (6 events)
+			event:
+				day
+				message
+				choice X3
+		counter
+		choice log
+		list of endings (three strings)
+		functions:
+			countNext (increases counter)
+			choiceUpdater
+			checkAnswer
+			getDay
+			getChoice
+			--changeMood
+			loadPrompt
+	loads intro (using prompt generator)
+	on click:
+		if count === 6
+			endingGenerator
+			return
+		else:
+			choiceUpdater
+			checkAnswer
+			changeMood
+			countNext
+			loadPrompt
+		

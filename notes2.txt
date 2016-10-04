@@ -1,0 +1,34 @@
+
+//main structure
+
+load screen (defaul css)
+icon-box= .off
+.romance= .off
+
+choose character screen (game.js)
+.choice + choose-char
+.character-img -.off
+.status-box+.off
+
+
+intro screen(storyClass if===0)
+.choice -.choose-char
+.character-img +.off
+icon-box- .off
+img#char +.show() + appendTo(#icon-box)
+#a +.btn
+
+
+mainloop screen(storyClass else)
+#a - .btn
+#status-box - .off
+.romance - .off
+
+
+on-repeat(new function)
+icon-box= .off
+.romance= .off
+.choice + choose-char
+.character-img -.off
+
+

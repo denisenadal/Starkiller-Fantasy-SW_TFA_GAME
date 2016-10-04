@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="js/game.js"></script>
+<script src="js/storylines.js"></script>
+<script src="js/storyClass.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Exo:300,800" rel="stylesheet"> 
+<link href="css/main.css" type"text/css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Starkiller Fantasy</h1>
+	</header>
+	<main>
+		<div id="wrap">
+			<div id="main-box">
+				<div id="icon-box">
+				</div>
+				<div id="text-box">
+					<h2 id="title"></h2>
+					<p id="event">A simple browser-based Star Wars: TFA romance game. Play as General Hux, Kylo Ren or Mitaka!</p>
+					<ul id="action-list">
+						<li id="a" class="choice"><img id="hux-icon" src="img/icon-hux.jpg" class="off character-img" alt="hux-icon" width="125" height="125"></li>
+						<li id="b" class="choice"><img id="kylo-icon" src="img/icon-kylo.jpg" class="off character-img" alt="kylo-icon" width="125" height="125"></li>
+						<li id="c" class="choice"><img id="mitaka-icon" src="img/icon-mitaka.jpg" class="off character-img" alt="mitaka-icon" width="125" height="125"></li>
+					</ul>
+					<button id="repeat" onclick="repeat()" class="ending off">Play again?</button>
+			    </div>
+			</div>
+			<div id="status-box">
+				<button class="intro" onclick="main()">Play Now!</button>
+				<div id="romance-box" class="off">
+					<img id="romance-kylo" src="img/romance-kylo.jpg" class="off romance-img" alt="k" width="150" height="150"/>
+					<img id="romance-hux" src="img/romance-hux.jpg" class="off romance-img" alt="hux" width="150" height="150"/>
+					<h3 id="romance-title"></h3>
+					<h3 id="romance-mood"></h3>
+					<div id="romance-bar-wrap">
+						<div class="active-bar romance-bar-innerwrap">
+							<p class="bar-label">0</p>
+							<div id="romance-bar" class="romance-bar-inner"></div>
+							<p class="bar-label">50</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+	</footer>
+</body>
+</html>
